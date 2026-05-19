@@ -1,0 +1,16 @@
+IT211-Session04-Ex03
+Phần 1:
+	- So sánh @PathVariable và @RequestParam:
+		- Vị trí trên URL:
+			+ @PathVariable: Nằm trong path URL
+			+ @RequestParam: Nằm sau dấu ?
+		- Mục đích sử dụng:
+			+ @PathVariable: Định danh tài nguyên cụ thể
+			+ @RequestParam: Lọc, tìm kiếm, phân trang
+		- Ví dụ thực tế:
+			+ @PathVariable: /movies/M001
+			+ @RequestParam: /movies?genre=Sci-Fi
+
+	- Dùng @PathVariable cho định danh tài nguyên tại vì M01 là mã định danh duy nhất và nó đang đại diện cho phim có id là M01
+	- Dùng @RequestParam cho lọc/tìm kiếm vì genre chỉ là điều kiện lọc nên resource chính vẫn là /movies có nghĩa là lấy danh sách movie với điều kiện
+genre=Sci-Fi
